@@ -16,8 +16,16 @@ class MainActivity : AppCompatActivity() {
         accessPublicMethod()
         // Example of a call to a native method
         sample_text.text = stringFromJNI() + ", Num = " + addNum(3, 7) + "\n" +
-                "now sex = " + getSex()
+                "now sex = " + getSex() + "\n" + "nu = " + test(1)
 
+    }
+
+    fun test(nu: Int): Int {
+        var nu: Int = 3
+        if(nu > 0) {
+            var nu: Int = 2
+        }
+        return nu
     }
 
     fun setSex(sex: String) {
